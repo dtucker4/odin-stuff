@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello world!")
+        
+        let answer = getAnswer();
+        
+        console.log(answer);
+
+        for(let i=1; i<= answer; i++){
+                console.log(i);
+            }
+        
+
+            function getAnswer() {
+
+                
+                let answerSet = parseInt(prompt("please enter a positive number below 100!"));
+                
+                if (answerSet > 100 || answerSet <=0) {
+                alert("Oi!");
+                return getAnswer();
+                }
+                
+                return answerSet;
+                
+
+               
+            }
+    </script>
+</body>
+</html>
